@@ -15,7 +15,7 @@ const Message =()=>{
     },[])
 
     const getContacts= async ()=>{
-        let result = await fetch("http://localhost:5000/contact",{
+        let result = await fetch("https://ankit-mongo-test.herokuapp.com/contact",{
             headers:{
                 authorization: JSON.parse(localStorage.getItem('token'))
             }

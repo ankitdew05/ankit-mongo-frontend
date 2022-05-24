@@ -9,7 +9,7 @@ const Contact = () => {
 
   const addContact = async () => {
     console.warn(name, email, message);
-    let result = await fetch("http://localhost:5000/contacts", {
+    let result = await fetch("https://ankit-mongo-test.herokuapp.com/contacts", {
       method: "post",
       body: JSON.stringify({ name, email, message }),
       headers: {
